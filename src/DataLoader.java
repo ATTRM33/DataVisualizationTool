@@ -15,7 +15,7 @@ public class DataLoader {
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
-            String[] data = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");//ignores commas a delimiter when looking through quoted text
+            String[] data = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");//ignores commas as delimiter when looking through quoted text
 
             //formatted data for missing values. Default values are replaced for missing data.
             String survivedStr = data.length > 0 ? data[0].trim() : "Unknown";
@@ -31,16 +31,16 @@ public class DataLoader {
             String embarked = data.length > 10 ? data[10].trim() : "Unknown";
 
             DataModel datum = new DataModel(
-                    DataModel.DidSurvive.parseSurvive(survivedStr),  // survived
-                    Integer.parseInt(pclassStr),  // pclass
-                    name,  // name
-                    DataModel.Gender.parseGender(sexStr),  // sex
-                    ageStr.isEmpty() ? null : Double.parseDouble(ageStr),  // age (null if empty)
-                    Integer.parseInt(sibspStr),  // sibsp
-                    Integer.parseInt(parchStr),  // parch
+                    DataModel.DidSurvive.parseSurvive(survivedStr),  //survived
+                    Integer.parseInt(pclassStr),  //pclass
+                    name,  //name
+                    DataModel.Gender.parseGender(sexStr),  //sex
+                    ageStr.isEmpty() ? null : Double.parseDouble(ageStr),  //age 
+                    Integer.parseInt(sibspStr),  //sibsp
+                    Integer.parseInt(parchStr),  //parch
                     ticket,  // ticket
-                    fareStr.isEmpty() ? 0.0 : Double.parseDouble(fareStr),  // fare
-                    cabin,  // cabin
+                    fareStr.isEmpty() ? 0.0 : Double.parseDouble(fareStr),  //fare
+                    cabin,  //cabin
                     embarked
 
             );

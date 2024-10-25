@@ -15,11 +15,7 @@ public class Main {
         frame.setVisible(true);
         frame.setMinimumSize(new Dimension(800, 600));
 
-        JPanel statspanel = new JPanel();
-        statspanel.setLayout(new BoxLayout(statspanel, BoxLayout.Y_AXIS));
-        frame.getContentPane().add(statspanel);
 
-        System.out.println(Data.size());
-        System.out.println(Data.get(0));
+
     }
 }

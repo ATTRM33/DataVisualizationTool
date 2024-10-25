@@ -23,5 +23,9 @@ public record DataModel(DidSurvive survived, int passengerClass, String name, Ge
                 default -> NA;
             };
         }
+
+
     }
+
+
 }

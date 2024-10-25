@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 
 public class DataLoader {
 
+
     public static ArrayList<DataModel> readTitanicData(String filename) throws IOException {
         try (Stream<String> contents = Files.lines(Path.of(filename), StandardCharsets.UTF_8)) {
             ArrayList<DataModel> dataModels = new ArrayList<>();
@@ -50,5 +51,11 @@ public class DataLoader {
             })
             .collect(Collectors.toCollection(ArrayList::new));
         }
+    }
+
+    public static ArrayList<DataModel> getSurvivors(ArrayList<DataModel> passengers) {
+        return passengers.stream()
+                .filter(passenger -> passenger.survived() == DataModel.DidSurvive.DID_SURVIVE)
+                .collect(Collectors.toCollection(ArrayList::new));
     }
 }

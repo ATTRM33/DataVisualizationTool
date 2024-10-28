@@ -10,7 +10,7 @@ class DetailsPanel extends JPanel {
         setBorder(BorderFactory.createTitledBorder("Passenger Details"));
 
         detailsArea = new JTextArea();
-        detailsArea.setEditable(false);  // Make it read-only
+        detailsArea.setEditable(false); 
 
         JScrollPane scrollPane = new JScrollPane(detailsArea);
 

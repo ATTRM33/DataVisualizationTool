@@ -7,6 +7,6 @@
 - You can filter through gender, survival status, and passenger class.
 - The program features a bar chart that can be filtered by passenger class, gender, and age groups.
 - The program will show running statistics based on filtered data. By default it displays stats for the total passengers.
-- 
+  
 ## How to run
 - Simply run the `main.java` file

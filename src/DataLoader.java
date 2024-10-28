@@ -39,8 +39,8 @@ public class DataLoader {
                         name,  //name
                         DataModel.Gender.parseGender(sexStr),  //sex
                         ageStr.isEmpty() ? null : Double.parseDouble(ageStr),  //age
-                        Integer.parseInt(sibspStr),  //sibsp
-                        Integer.parseInt(parchStr),  //parch
+                        Integer.parseInt(sibspStr),  //siblings on board
+                        Integer.parseInt(parchStr),  //parents on board
                         ticket,  // ticket
                         fareStr.isEmpty() ? 0.0 : Double.parseDouble(fareStr),  //fare
                         cabin,  //cabin

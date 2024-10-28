@@ -7,5 +7,42 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/jcommon-1.0.23/jcommon-1.0.23/src/main/java" />
+          <root url="file://$MODULE_DIR$/jcommon-1.0.23/jcommon-1.0.23/src/test/java" />
+          <root url="file://$MODULE_DIR$/jfreechart-1.0.19/jfreechart-1.0.19/experimental" />
+          <root url="file://$MODULE_DIR$/jfreechart-1.0.19/jfreechart-1.0.19/source" />
+          <root url="file://$MODULE_DIR$/jfreechart-1.0.19/jfreechart-1.0.19/swt" />
+          <root url="file://$MODULE_DIR$/jfreechart-1.0.19/jfreechart-1.0.19/tests" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/jcommon-1.0.23/jcommon-1.0.23" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/jcommon-1.0.23/jcommon-1.0.23" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/jfreechart-1.0.19/jfreechart-1.0.19" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/jfreechart-1.0.19/jfreechart-1.0.19" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="jcommon-1.0" level="project" />
+    <orderEntry type="library" exported="" name="jfreechart-1.0" level="project" />
+    <orderEntry type="library" exported="" name="guicedee.services.jfreechart" level="project" />
   </component>
 </module>

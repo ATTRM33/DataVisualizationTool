@@ -55,12 +55,14 @@ public class StatsPanel extends JPanel {
                 ));
 
         totalPassengers.setText(String.format("Total Passengers: %d", total));
-        survivalRate.setText(String.format("Survival Rate: %.1f%%", survivedPercent));
-        averageAge.setText(String.format("Average Age: %.1f years", avgAge));
-        averageFare.setText(String.format("Average Fare: £%.2f", avgFare));
-        classDistribution.setText(String.format("Class Distribution: 1st: %d, 2nd: %d, 3rd: %d",
+        survivalRate.setText(String.format(" Survival Rate: %.1f%%", survivedPercent));
+        averageAge.setText(String.format(" Average Age: %.1f years", avgAge));
+        averageFare.setText(String.format(" Average Fare: £%.2f", avgFare));
+        classDistribution.setText(String.format(" Class Distribution: 1st: %d | 2nd: %d | 3rd: %d",
                 classCounts.getOrDefault(1, 0L),
                 classCounts.getOrDefault(2, 0L),
                 classCounts.getOrDefault(3, 0L)));
+
+
     }
 }
